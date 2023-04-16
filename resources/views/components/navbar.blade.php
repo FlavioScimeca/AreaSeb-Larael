@@ -21,7 +21,8 @@
             <li><a class="dropdown-item" href="{{route("login")}}">Login</a></li>
             <li><a class="dropdown-item" href="{{route("register")}}">Register</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a onclick=" event.preventDefault(); document.querySelector('#form-logout').submit() " class="dropdown-item" href="#">Logout</a></li>
+            <form id="form-logout" action="{{route("logout")}}" method="POST">@csrf</form>
           </ul>
           @else
           <ul class="dropdown-menu">
