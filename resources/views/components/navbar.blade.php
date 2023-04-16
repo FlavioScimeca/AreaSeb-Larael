@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="/">Ciao {{ Auth::check() ? Auth::user()->name : "Guest" }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold" href="{{route("article.index")}}">Profilo</a>
+          <a class="btn btn-outline-info" href="{{route("article.index")}}">Profilo</a>
         </li>
         @guest
         <li class="nav-item dropdown">
@@ -27,6 +27,9 @@
         <li class="mx-3 btn btn-outline-warning"><a onclick=" event.preventDefault(); document.querySelector('#form-logout').submit() " class="dropdown-item" href="#">Logout</a></li>
         <form id="form-logout" action="{{route("logout")}}" method="POST">@csrf</form>
         @endauth
+        <div>
+          <a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://github.com/FlavioScimeca/AreaSeb-Larael" target="blanl"><i class="bi bi-github me-2 text-dark"></i>Repo di questo progetto</a>
+        </div>
       </ul>
       <div>
         <a href="{{route("article.create")}}" class="btn btn-outline-success"><i class="bi bi-plus-circle-fill"></i> articolo</a>

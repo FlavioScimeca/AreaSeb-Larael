@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row my-5">
             <h2 class="text-center">
-                Welcome page
+                Welcome page, add 4 items for pagination
             </h2>
         </div>
         <div class="row">

@@ -8,10 +8,16 @@ use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->only(["create", "edit", "destroy"]);
+    }
+
     public function welcome_show(){
         $articles = Article::paginate(3);
         return view("welcome", compact("articles"));
     }
+
     /**
      * Display a listing of the resource.
      */
