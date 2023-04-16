@@ -27,14 +27,6 @@ class ArticleController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      */
     public function show(Article $article)
@@ -45,9 +37,11 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit(Request $request)
     {
-        //
+        $article_id = $request["article_id"];
+
+        return view("article.edit", ["article_id" => $article_id]);
     }
 
     /**

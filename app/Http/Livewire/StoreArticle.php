@@ -28,18 +28,12 @@ class StoreArticle extends Component
         $this->reset();
     }
 
-    public function updatedPhoto()
-    {
-        $this->validate([
-            'photo' => 'image|max:1024', // 1MB Max
-        ]);
-    }
-
     protected $rules = [
 
         'title' => 'required|min:3|max:200',
         'description' => 'required|min:3|max:2000',
         'price' => 'required|numeric',
+        'image' => 'required|image|max:1024'
     ];
 
     public function render()
