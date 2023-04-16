@@ -33,7 +33,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <button class="btn btn-outline-success"><i class="bi bi-plus-circle-fill"></i> articolo</button>
+        <a href="{{route("article.create")}}" class="btn btn-outline-success"><i class="bi bi-plus-circle-fill"></i> articolo</a>
       </form>
     </div>
   </div>
