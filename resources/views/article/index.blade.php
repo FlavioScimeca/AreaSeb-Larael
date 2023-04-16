@@ -1,11 +1,12 @@
 <x-layout title="Index-article">
     <div class="container p-2 p-md-5">
         <div class="row">
-            <div class="col-md-10 mx-auto">
+            <div class="col-md-9 mx-auto">
                 <div class="row">
                     @forelse ($articles as $article )
                     <div class="col-8 col-md-4 mx-auto">
-                        <div class="card mx-auto mt-3">
+                        <div class="card mx-auto mt-3 position-relative">
+                            <a href="{{route('article.show', ['article_id' => $article->id])}}"><i class="bi bi-info-circle-fill fs-3 position-absolute translate-middle"></i></a>
                             <img src="{{ Storage::url($article->image) ?? ""}}" class="card-img-top object-fit-contain" style="height: 10rem" alt="{{$article->title}}">
                             <div class="card-body">
                               <h5 class="card-title">{{$article->title}}</h5>

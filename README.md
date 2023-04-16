@@ -8,7 +8,7 @@
 -   [x] Creare un form per <span style="color: green; font-weight: bold">Aggiungere</span> un Articolo
 -   [x] Creare un form per <span style="color: yellow; font-weight: bold">Aggiornare</span> un Articolo
 -   [ ] Creare un form per <span style="color: red; font-weight: bold">Eliminare</span> un Articolo
--   [ ] Creare una pagina <span style="color: blue; font-weight: bold">Dettaglio</span> dell Articolo
+-   [x] Creare una pagina <span style="color: blue; font-weight: bold">Dettaglio</span> dell Articolo
 -   [x] Utilizzare un **middleware** per la protezione delle rotte
 
 ## extra

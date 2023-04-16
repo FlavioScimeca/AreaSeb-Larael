@@ -29,9 +29,10 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Request $request)
     {
-        //
+        $article = Article::find($request->article_id);
+        return view("article.show", compact("article"));
     }
 
     /**
@@ -42,14 +43,6 @@ class ArticleController extends Controller
         $article_id = $request["article_id"];
 
         return view("article.edit", ["article_id" => $article_id]);
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Article $article)
-    {
-        //
     }
 
     /**
