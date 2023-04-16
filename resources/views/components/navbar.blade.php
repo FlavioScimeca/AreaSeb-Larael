@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="/">Ciao {{ Auth::check() ? Auth::user()->name : "Guest" }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link border-2 border-bottom border-dark" href="#">Profilo</a>
+          <a class="nav-link border-2 border-bottom border-dark" href="{{route("article.index")}}">Profilo</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
