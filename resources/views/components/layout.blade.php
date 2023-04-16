@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title ?? 'Areaseb-Laravel'}}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 <body>
     <x-navbar />
@@ -13,5 +14,6 @@
         {{$slot}}
     </main>
     <x-footer />
+    @livewireScripts
 </body>
 </html>
