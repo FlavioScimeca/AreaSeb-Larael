@@ -1,7 +1,8 @@
 ## todo
 
 -   [x] Creare un progetto Laravel
--   [ ] Aggiungere Bootstrap
+-   [x] Aggiungere Bootstrap
+-   [x] Scaffolding
 -   [ ] Connettere un DB SQL
 -   [ ] Creare un form di Register/Login/Logout per gli utenti
 -   [ ] Creare un form per <span style="color: green; font-weight: bold">Aggiungere</span> un Articolo
