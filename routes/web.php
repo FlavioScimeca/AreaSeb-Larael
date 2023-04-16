@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name("welcome");
 //? Article Routes
+Route::get("/", [ArticleController::class, "welcome_show"])->name("welcome");
 Route::get("/article-create", [ArticleController::class, "create"])->name("article.create");
 Route::get("/articles-index", [ArticleController::class, "index"])->name("article.index");
 Route::get("/article-edit/{article_id}", [ArticleController::class, "edit"])->name("article.edit");

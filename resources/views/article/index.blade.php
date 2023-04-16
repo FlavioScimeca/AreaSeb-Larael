@@ -27,6 +27,8 @@
                     </div>
                     @endforelse
                 </div>
+                <div class="d-flex justify-content-center bg-danger p-2">
+                </div>       
             </div>
         </div>
     </div>
