@@ -20,3 +20,4 @@ Route::get("/article-create", [ArticleController::class, "create"])->name("artic
 Route::get("/articles-index", [ArticleController::class, "index"])->name("article.index");
 Route::get("/article-edit/{article_id}", [ArticleController::class, "edit"])->name("article.edit");
 Route::get("/article-show/{article_id}", [ArticleController::class, "show"])->name("article.show");
+Route::get("/article-delete/{article_id}", [ArticleController::class, "destroy"])->name("article.delete");

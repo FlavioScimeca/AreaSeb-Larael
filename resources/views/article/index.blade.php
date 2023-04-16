@@ -14,7 +14,7 @@
                               <p class="card-text">Price: <span>{{$article->price}}</span></p>
                               <div>
                                   <a href="{{route('article.edit' , ['article_id' => $article->id])}}" class="btn btn-warning">Modifica</a>
-                                  <a href="#" class="btn btn-danger">Elimina</a>
+                                  <a href="{{route('article.delete' , ['article_id' => $article->id])}}" class="btn btn-danger">Elimina</a>
                               </div>
                             </div>
                           </div>
@@ -26,9 +26,7 @@
                         </div>
                     </div>
                     @endforelse
-                </div>
-                <div class="d-flex justify-content-center bg-danger p-2">
-                </div>       
+                </div>      
             </div>
         </div>
     </div>
