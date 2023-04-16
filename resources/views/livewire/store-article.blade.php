@@ -1,4 +1,5 @@
 <div class="p-2 p-md-5">
+    <x-messages />
     <form method="POST" wire:submit.prevent="store">
         @csrf
         <div class="mb-3">
@@ -7,8 +8,8 @@
             @error('title') <span class="bg-danger p-1 rounded-3 fw-semibold">{{ $message }}</span> @enderror
         </div>
         @if ($image)
-        <div>
-            <img src="{{ $image->temporaryUrl() }}" class="img-fluid rounded-top">
+        <div class="d-flex justify-content-center">
+            <img class="w-50 mx-auto" src="{{ $image->temporaryUrl() }}" class="img-fluid rounded-top">
         </div>
         @endif
         <div class="mb-3">

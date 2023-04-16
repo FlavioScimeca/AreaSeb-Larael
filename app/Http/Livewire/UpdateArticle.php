@@ -28,7 +28,7 @@ class UpdateArticle extends Component
             ]);
         }
 
-        return redirect(route("welcome"));
+        return redirect(route("welcome"))->with('successMessage', 'Articolo aggiornato');
     }
 
     public function mount($article_id){

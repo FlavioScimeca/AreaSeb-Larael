@@ -1,4 +1,5 @@
 <div class="p-2 p-md-5">
+    <x-messages />
     <form method="POST" wire:submit.prevent="update">
         @csrf
         <div class="mb-3">

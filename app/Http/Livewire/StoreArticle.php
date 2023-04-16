@@ -26,6 +26,7 @@ class StoreArticle extends Component
             "price" => $this->price,
         ]);
         $this->reset();
+        session()->flash('successMessage', 'Hai inserito correttamente');
     }
 
     protected $rules = [

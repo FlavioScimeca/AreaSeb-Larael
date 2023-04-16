@@ -1,4 +1,7 @@
 <x-layout>
+    <div class="py-3">
+        <x-messages />
+    </div>
     <div class="container">
         <div class="row my-5">
             <h2 class="text-center">
